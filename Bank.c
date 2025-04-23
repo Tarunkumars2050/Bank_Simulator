@@ -325,9 +325,10 @@ void encryptDecryptPin(char *pin) {
 }
 
 void saveData(Account accounts[], int numAccounts) {
-    FILE *file = fopen("c:\\Users\\TARUN\\Desktop\\DSA_PROJECT\\data.txt", "w");
+    FILE *file = fopen("data.txt", "w");  // Use relative path
     if (file == NULL) {
-        printf("Error saving data!\n");
+        printf("Error: Unable to create/open data file!\n");
+        printf("Please ensure you have write permissions in this directory.\n");
         return;
     }
 
@@ -348,11 +349,11 @@ void saveData(Account accounts[], int numAccounts) {
     }
     
     fclose(file);
-    g_numAccounts = numAccounts;  // Update global count after save
+    g_numAccounts = numAccounts;
 }
 
 void loadData(Account accounts[], int *numAccounts) {
-    FILE *file = fopen("c:\\Users\\TARUN\\Desktop\\DSA_PROJECT\\data.txt", "r");
+    FILE *file = fopen("data.txt", "r");  // Use relative path
     if (file == NULL) {
         *numAccounts = 0;
         return;
@@ -373,7 +374,7 @@ void loadData(Account accounts[], int *numAccounts) {
             acc->pin
         );
         
-        encryptDecryptPin(acc->pin);  // Decrypt the PIN
+        encryptDecryptPin(acc->pin);
     }
     
     fclose(file);
