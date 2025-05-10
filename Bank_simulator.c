@@ -265,6 +265,9 @@ void list_all_accounts() {
 
 
 
+
+
+
 // The code given bellow if for same work but it will not create last_acc_no.txt. this code will take last account created from account.txt
 // #include <stdio.h>
 // #include <stdlib.h>
