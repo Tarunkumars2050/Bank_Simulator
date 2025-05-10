@@ -1,0 +1,4 @@
+1000001,Tarun Kumar,19,Jnu Munirka New Delhi,Saving,2000.00
+1000002,Bharat Saini,18,Jnu Munirka New Delhi,Saving,2000.00
+1000003,Shravya Singh Negi,19,Jnu Munirka New Delhi,Saving,2000.00
+1000004,Mukul Sharma,19,Jnu Munirka New Delhi,Saving,2000.00
