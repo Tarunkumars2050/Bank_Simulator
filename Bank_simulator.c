@@ -255,8 +255,9 @@ void list_all_accounts() {
         printf("%-15d %-30s %-40s %-15s %-10.2f\n",
                acc.acc_no, acc.name, acc.address, acc.acc_type, acc.balance);
     }
-    fclose(fp);
+    fclose(fp);
 }
+
 
 
 
